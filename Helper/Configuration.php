@@ -7,6 +7,10 @@
 
 namespace Dadolun\SibCore\Helper;
 
+if (!defined("DS")):
+	define("DS", DIRECTORY_SEPARATOR);
+endif;
+
 use Magento\Framework\App\Helper\Context;
 use Magento\Store\Model\ScopeInterface;
 use Magento\Framework\App\Config\Storage\WriterInterface;
